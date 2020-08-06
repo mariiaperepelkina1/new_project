@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 function Homework() {
-    const [color, setColor] = useState('#d6909c');
+    const [color, setColor] = useState('pink');
     const changeColor = () => {
-        setColor('#000');
+        setColor('black');
     };
 
     return (

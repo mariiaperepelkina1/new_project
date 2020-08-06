@@ -42,7 +42,10 @@ h1 {
 .button:hover {
   background-color: #d6909c; 
   
+}
 
+.button--traffic {
+  background-color: #ff0000; 
 }
 
 
