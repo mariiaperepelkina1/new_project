@@ -15,13 +15,18 @@ const Homework2 = () => {
      */
     const[color, setColor] = useState('red'); 
     const changeColor = () => {
-        if (color === 'red') {
-            setColor('yellow'); 
-        } else if (color === 'yellow') {
-            setColor('green')
+        switch (color) {
+            case 'red':
+                setColor('yellow'); 
+                break; 
+            case 'yellow':
+                setColor('green'); 
+                break; 
+            case 'green':
+                setColor('red'); 
+                break; 
         }
     };
-
 
     return <div className="wrapper">
         <button className="button button--traffic" onClick={changeColor} style={{backgroundColor: color}}>{color}</button>
